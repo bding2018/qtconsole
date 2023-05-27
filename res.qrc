@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>logo.qss</file>
+        <file>images/icon24/add.png</file>
+        <file>images/icon24/alarm.png</file>
+        <file>images/icon24/app.png</file>
+        <file>images/icon24/assistant.png</file>
+        <file>images/icon24/breaker.png</file>
+        <file>images/icon24/btndown.png</file>
+        <file>images/icon24/btnleft.png</file>
+        <file>images/icon24/btnok.png</file>
+        <file>images/icon24/btnright.png</file>
+        <file>images/icon24/btnup.png</file>
+        <file>images/icon24/cancel.png</file>
+        <file>images/icon24/clear.png</file>
+        <file>images/state_grid_bg.png</file>
+        <file>images/state_grid_mask.bmp</file>
+        <file>images/icon24/save.png</file>
+        <file>images/icon24/search.png</file>
+        <file>images/icon24/wait.png</file>
+        <file>images/icon24/quit.png</file>
+        <file>images/icon24/quit2.png</file>
+        <file>images/icon24/recycle.png</file>
+        <file>images/icon24/simu.png</file>
+        <file>images/icon24/quit3.png</file>
+        <file>images/icon24/quit4.png</file>
+        <file>images/icon24/quit5.png</file>
+        <file>images/sg.gif</file>
+        <file>images/circle.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainframe</class>
+ <widget class="QFrame" name="mainframe">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>240</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame[objectName=&quot;mainframe&quot;]{
+	border-image: url(:/images/state_grid_bg.png);
+}
+QGroupBox,QLabel{
+background-color: rgb(85, 87, 83);
+color: rgb(255, 255, 255);
+}
+
+/****************************QToolButton Begin*****************************/
+QToolButton:hover{
+    border: 2px solid rgba(200,200,230,255);
+	/*background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(80, 80, 155, 255),  stop:1 rgba(255, 255, 255, 0));*/   
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(66, 66, 99, 255), stop:1 rgba(255, 255, 255, 255));
+    color:#002200;
+    border-radius:14px;
+ 	font-family: &quot;Microsoft YaHei&quot;;
+    font-weight: bold;
+	font-size:14px;
+}
+
+QToolButton{
+    border: 3px solid rgba(200,200,240,255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(250, 255, 250, 255), stop:1 rgba(100, 255, 100, 200));
+    color:#666699;
+    border-radius:14px;
+ 	font-family: &quot;Microsoft YaHei&quot;;
+    font-weight: bold;
+	font-size:14px;
+}
+
+QToolButton:pressed{
+    border: 2px solid rgba(200,200,230,255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 255, 240, 255), stop:1 rgba(200, 255, 200, 255));
+    color:#66AA99;
+    border-radius:14px;
+ 	font-family: &quot;Microsoft YaHei&quot;;
+    font-weight: bold;
+	font-size:14px;
+}
+
+QGroupBox#grpPara,QLabel{
+background-color: rgb(52, 60, 90);
+}
+/****************************QToolButton End******************************/
+
+/****************************QCheckBox Begin*****************************/
+QCheckBox{
+	border: none;/*最外层边框*/
+}
+QCheckBox::indicator{/*选择框尺寸*/
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid #b1b1b1;
+	width: 30px;
+	height: 30px;
+}
+QCheckBox:enabled:checked{
+	color: rgb(255, 255, 255);
+}
+QCheckBox:enabled:!checked{
+	color: rgb(255, 255, 255);
+}
+QCheckBox:enabled:hover{
+ 	color: rgb(0, 200, 0);
+}
+QCheckBox:!enabled{
+	color: rgb(80, 80, 80);
+}
+QCheckBox::indicator:unchecked {
+        image: url(:/image/check/checkbox_r3_c1.png);
+}
+QCheckBox::indicator:unchecked:hover {
+ image: url(:/image/check/checkbox_r3_c5.png);
+}
+QCheckBox::indicator:unchecked:pressed {
+ image: url(:/image/check/checkbox_r3_c1.png);
+}
+QCheckBox::indicator:checked {
+        image: url(:/image/check/checkbox_r7_c5.png);
+}
+QCheckBox::indicator:checked:hover {
+ image: url(:/image/check/checkbox_r5_c5.png);
+}
+QCheckBox::indicator:checked:pressed {
+   image: url(:/image/check/checkbox_r3_c1.png);
+}
+
+
+
+
+/****************************QCheckBox End*****************************/
+
+/****************************QSpinBox Begin*****************************/
+QSpinBox {
+	border:1px solid #CCFFCC;
+	background:#C9C9F9;
+	min-width:40px;
+}
+/****************************QSpinBox End*****************************/</string>
+  </property>
+  <widget class="QPushButton" name="pbClose">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>110</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>关闭窗口</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border-image:  url(:/images/icon24/quit4.png);
+}
+
+QPushButton:hover {	/* 鼠标悬浮在QPushButton上时的状态 */
+	/*background-color: #298DFF;
+	color: #F2F2F2;*/
+	border-image:  url(:/images/icon24/quit3.png);
+}
+
+QPushButton:checked { /* QPushButton可选中时的状态 */
+	border: 1px solid #FF5242;
+	background-color: #F2F2F2;
+	color: #FF5242;
+}
+
+QPushButton:pressed { /* 鼠标按压在QPushButton上时的状态 */
+	/*background-color: #257FE6;*/
+	border-image:  url(:/images/icon24/quit2.png);
+}
+
+QPushButton:checked:pressed { /* QPushButton处于可选中且鼠标按压在QPushButton上时的状态 */
+	background-color: #F2F2F2;
+}
+
+QPushButton:disabled { /* QPushButton禁用时的状态 */
+	border: 1px solid #CDCDCD;
+	background-color: #CDCDCD;
+	color: #B4B4B4;
+}
+
+QPushButton#ImageButton { /* 定义图片按钮，ImageButton为对象名，在QSS中为特定对象定制样式 */
+	border-image: url(&quot;:/Resource/border_image&quot;); /* 使用border-image可以自适应按钮大小 */
+	background-color: transparent; /* 不需要背景时可设为透明 */
+}
+
+QPushButton#ImageButton:hover {
+	border-image: url(&quot;:/Resource/border_image_hover&quot;);
+}
+
+QPushButton#ImageButton:pressed {
+	border-image: url(&quot;:/Resource/border_image&quot;);
+}
+
+QPushButton:menu-indicator { /* QPushButton带有菜单时的菜单指示器 */
+	subcontrol-origin：padding; /* 菜单指示器的起始点 */
+	subcontrol-position: center right; /* 菜单指示器的位置，处于水平靠右且垂直居中 */
+	image: url(:/Resource/down_arrow_normal); /* 菜单指示器的图像 */
+}
+
+QPushButton:menu-indicator:hover, QPushButton:menu-indicator:open { /* 鼠标悬浮在菜单指示器上和菜单指示器启用时的状态 */
+	position: relative;
+	top: 2px;
+	left: 2px;
+	image: url(:/Resource/down_arrow_hover);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>371</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="ConsoleMovie" name="labelMovie">
+   <property name="geometry">
+    <rect>
+     <x>91</x>
+     <y>90</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(170, 0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>no gif</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbConfig">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>140</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>添加按钮</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border-image:  url(:/images/icon24/quit4.png);
+}
+
+QPushButton:hover {	/* 鼠标悬浮在QPushButton上时的状态 */
+	/*background-color: #298DFF;
+	color: #F2F2F2;*/
+	border-image:  url(:/images/icon24/quit3.png);
+}
+
+QPushButton:checked { /* QPushButton可选中时的状态 */
+	border: 1px solid #FF5242;
+	background-color: #F2F2F2;
+	color: #FF5242;
+}
+
+QPushButton:pressed { /* 鼠标按压在QPushButton上时的状态 */
+	/*background-color: #257FE6;*/
+	border-image:  url(:/images/icon24/quit2.png);
+}
+
+QPushButton:checked:pressed { /* QPushButton处于可选中且鼠标按压在QPushButton上时的状态 */
+	background-color: #F2F2F2;
+}
+
+QPushButton:disabled { /* QPushButton禁用时的状态 */
+	border: 1px solid #CDCDCD;
+	background-color: #CDCDCD;
+	color: #B4B4B4;
+}
+
+QPushButton#ImageButton { /* 定义图片按钮，ImageButton为对象名，在QSS中为特定对象定制样式 */
+	border-image: url(&quot;:/Resource/border_image&quot;); /* 使用border-image可以自适应按钮大小 */
+	background-color: transparent; /* 不需要背景时可设为透明 */
+}
+
+QPushButton#ImageButton:hover {
+	border-image: url(&quot;:/Resource/border_image_hover&quot;);
+}
+
+QPushButton#ImageButton:pressed {
+	border-image: url(&quot;:/Resource/border_image&quot;);
+}
+
+QPushButton:menu-indicator { /* QPushButton带有菜单时的菜单指示器 */
+	subcontrol-origin：padding; /* 菜单指示器的起始点 */
+	subcontrol-position: center right; /* 菜单指示器的位置，处于水平靠右且垂直居中 */
+	image: url(:/Resource/down_arrow_normal); /* 菜单指示器的图像 */
+}
+
+QPushButton:menu-indicator:hover, QPushButton:menu-indicator:open { /* 鼠标悬浮在菜单指示器上和菜单指示器启用时的状态 */
+	position: relative;
+	top: 2px;
+	left: 2px;
+	image: url(:/Resource/down_arrow_hover);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icon24/add.png</normaloff>:/images/icon24/add.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>130</y>
+     <width>371</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QToolButton" name="tbAdd_6">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>99999</width>
+        <height>99999</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>互联测试</string>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/images/icon24/simu.png</normaloff>:/images/icon24/simu.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QToolButton" name="tbAdd_7">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>99999</width>
+        <height>99999</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>互联测试</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QToolButton" name="tbAdd_8">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>99999</width>
+        <height>99999</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>互联测试</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QToolButton" name="tbAdd_9">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>99999</width>
+        <height>99999</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>互联测试</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QToolButton" name="tbAdd_10">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>99999</width>
+        <height>99999</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>互联测试</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QToolButton" name="tbAdd_12">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>99999</width>
+        <height>99999</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>互联测试</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ConsoleMovie</class>
+   <extends>QLabel</extends>
+   <header>console_movie.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

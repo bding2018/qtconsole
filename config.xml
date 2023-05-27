@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="System"?>
+<menu>
+    <group name="巡视系统" icon="">
+        <app name="app1" id="1" type="1"  icon="" path="notepad.exe" para="a.txt" tooltip="app1" x="0" y="0" w="0" h="0" reg="notepad"/>
+        <app name="app2" id="2" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app2"/>
+        <app name="app3" id="3" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app3"/>
+        <app name="app4" id="4" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app4"/>
+        <app name="app5" id="5" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app5"/>
+        <app name="app6" id="6" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app6"/>
+        <app name="app7" id="7" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app7"/>
+    </group>
+    <group name="辅控系统" icon="">
+        <app name="app21" id="21" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app8"/>
+        <app name="app22" id="22" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app9"/>
+        <app name="app23" id="23" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app10"/>
+        <app name="app24" id="24" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app11"/>
+        <app name="app25" id="25" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app12"/>
+        <app name="app26" id="26" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app13"/>
+        <app name="app27" id="27" type="1"  icon="" path="" para="" tooltip="app1" x="0" y="0" w="0" h="0" reg="app14zzz"/>
+    </group>
+</menu>
